@@ -1,0 +1,9 @@
+{
+  "image": "mcr.microsoft.com/devcontainers/universal:2",
+  "postCreateCommand": "bash setup-render-clone.sh",
+  "forwardPorts": [3000, 3001, 22],
+  "portsAttributes": {
+    "3000": {"label": "Render Clone", "onAutoForward": "notify"},
+    "3001": {"label": "Terminal", "onAutoForward": "silent"}
+  }
+}
