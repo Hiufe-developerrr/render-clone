@@ -29,19 +29,6 @@ npm run start
 
 Serwer wystartuje domyślnie na:
 
-- `http://localhost:3000`
-
-> Na Windows i w przeglądarce używaj `http://localhost:3000`, nie `http://0.0.0.0:3000`.
-
-Opcjonalnie:
-
-```bash
-HOST=0.0.0.0 PORT=3000 npm run start
-```
-
-Gdy ustawisz `HOST=0.0.0.0`, to jest to adres bind serwera (nasłuch), a nie adres do wpisania w przeglądarce.
-
-## API (MVP)
 
 - `GET /api/health`
 - `GET /api/models`
