@@ -4,6 +4,7 @@
   "description": "Darmowy VPS jak Render.com na GitHub Codespaces",
   "main": "render-server.js",
   "scripts": {
+    "prestart": "node scripts/ensure-deps.js",
     "start": "node render-server.js",
     "dev": "node render-server.js"
   },
