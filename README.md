@@ -29,9 +29,6 @@ npm run start
 
 Serwer wystartuje domyślnie na:
 
-- `http://localhost:3000`
-
-## API (MVP)
 
 - `GET /api/health`
 - `GET /api/models`
