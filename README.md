@@ -45,6 +45,20 @@ Gdy ustawisz `HOST=0.0.0.0`, to jest to adres bind serwera (nasłuch), a nie adr
 
 ## Troubleshooting
 
+### Konflikty merge (`<<<<<<<`, `=======`, `>>>>>>>`)
+
+Jeśli w plikach zostały znaczniki konfliktu (np. po `git pull` / merge), to `npm run start` zatrzyma się z czytelnym błędem i listą plików.
+
+Naprawa:
+
+1. Otwórz plik wskazany w komunikacie (np. `README.md`).
+2. Usuń znaczniki konfliktu:
+   - `<<<<<<< ...`
+   - `=======`
+   - `>>>>>>> ...`
+3. Zostaw finalną, jedną wersję treści i zapisz plik.
+4. Uruchom ponownie: `npm run start`.
+
 ### `Cannot find module 'express'`
 
 Jeśli zobaczysz błąd:
